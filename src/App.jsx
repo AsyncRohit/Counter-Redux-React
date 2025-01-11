@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { increment,decrement } from './store/actions/counterActions'
+import { increment,asyncdecerement } from './store/actions/counterActions'
 
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
   }
 
   const DecreaseCount=()=>{
-    dispatch(decrement())
+    dispatch(asyncdecerement())
   }
 
     return (
